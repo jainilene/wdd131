@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    flex: 1;
+}
+
+header {
+    background-color: gray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1rem;
+}
+
+.conteudo-central {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+body.conteudo {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.aside {
+    order: 1;
+    flex-basis: 100px;
+}
+
+.main {
+    flex: 1;
+    border-right: solid 1px black;
+    background-color: lightgray;
+}
+
+footer {
+    background-color: gray;
+}
