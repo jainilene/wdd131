@@ -9,7 +9,7 @@ body {
     font-weight: 400;
 }
 
-span {
+.titulo-pagina {
     display: block;
     justify-content: space-around;
     text-align: center;
@@ -46,9 +46,12 @@ nav :hover {
 }
 
 main {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
+    max-width: 800px;
+    justify-items: center;
 }
 
 main h1 {
@@ -62,6 +65,10 @@ main .perfil {
 
 main .cidade-estado {
     grid-column: 3/4;
+}
+
+section {
+    justify-self: center;
 }
 
 
@@ -82,13 +89,14 @@ main .cidade-estado {
 
 .card {
     border: 1px solid grey;
-    border-radius: 3%;
+    justify-content: center;
 
 }
 
 .card .titulo {
     background-color: rgb(24, 82, 145);
     padding: 0.4rem;
+    margin-top: 0;
 }
 
 .divisor {
@@ -117,4 +125,11 @@ h1 {
 footer {
     font-family: "Playfair Display", serif;
     background-color: rgb(24, 82, 145);
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+footer p {
+    margin: 0;
 }
