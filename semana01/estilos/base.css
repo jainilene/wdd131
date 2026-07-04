@@ -15,6 +15,7 @@ body {
     text-align: center;
     background-color: rgb(24, 82, 145);
     padding: 10px;
+    color: white;
 }
 
 nav {
@@ -97,6 +98,7 @@ section {
     background-color: rgb(24, 82, 145);
     padding: 0.4rem;
     margin-top: 0;
+    color: white;
 }
 
 .divisor {
@@ -132,4 +134,5 @@ footer {
 
 footer p {
     margin: 0;
+    color: white;
 }
