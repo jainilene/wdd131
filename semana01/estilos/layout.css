@@ -9,9 +9,16 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    flex: 1 1 auto;
+    /* justify-content: space-between; */
     background-color: black;
     padding: 1rem;
+}
+
+nav a {
+    flex: 1 1 auto;
 }
 
 .conteudo-central {
