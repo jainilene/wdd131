@@ -23,8 +23,12 @@ main h1 {
     text-align: center;
 }
 
+p {
+    font-size: larger;
+}
+
 #menu {
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 0;
     background: none;
     color: #000;
@@ -59,7 +63,6 @@ header {
     grid-gap: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
-    font-size: larger;
 }
 
 nav ul {

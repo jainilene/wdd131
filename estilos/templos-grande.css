@@ -6,12 +6,18 @@
     }
 
     nav ul {
+        display: flex;
         justify-content: flex-end;
         flex-direction: row;
     }
 
     nav a {
         flex: 1 1 100%;
+    }
+
+
+    .navigation a {
+        display: block;
     }
 
     .container-templos {
