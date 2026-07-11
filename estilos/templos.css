@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+
 }
 
 body {
@@ -13,6 +16,7 @@ body {
 main {
     flex: 1;
     width: 100%;
+    font-family: "Lavishly Yours", cursive;
 }
 
 main h1 {
@@ -25,7 +29,7 @@ main h1 {
     background: none;
     color: #000;
     position: absolute;
-    top: 1.5rem;
+    top: 0.5rem;
     right: 1.5rem;
 }
 
@@ -55,6 +59,7 @@ header {
     grid-gap: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
+    font-size: larger;
 }
 
 nav ul {
@@ -91,4 +96,8 @@ footer {
     color: #000;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    text-align: center;
 }
