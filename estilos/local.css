@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #1B365D;
+    --cor-secundária: #E4DDD0;
+    --cor-detalhes: #C9A961;
+    --cor-secundária2: #355E3B;
+}
+
+h1 {
+    background-color: var(--cor-secundária);
+    color: var(--cor-primaria);
+}
+
+h1,
+h2,
+picture {
+    text-align: center;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagem-principal,
+.data,
+.weather,
+.imagem-principal,
+footer {
+    border: 1px solid #000;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.data,
+.weather {
+    margin: 10px;
+}
+
+footer {
+    background-color: var(--cor-secundária);
+    color: var(--cor-secundária2);
+}

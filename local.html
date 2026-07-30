@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do País - Jainilene Nascimento</title>
+    <meta name="author" content="Jainilene Nascimento">
+    <meta name="description" content="Página com uma breve apresentação de algo especial no País">
+    <link rel="stylesheet" href="estilos/local.css">
+    <link rel="stylesheet" href="estilos/local-grande.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1> Praça do Templo em Salt Lake City</h1>
+    </header>
+    <div class="imagem-principal">
+        <picture>
+            <source srcset="imagens/praca-templo-grande.webp" media="(min-width: 800px)">
+            <source srcset="imagens/praca-templo-media.webp" media="(min-width: 400px)">
+            <img src="imagens/praca-templo-pequena.webp" alt="Praça do Templo de Salt Lake City">
+        </picture>
+    </div>
+    <div class="data">
+        <h2>Data</h2>
+        <p>País: Estados Unidos</p>
+        <p>Estado: Utah</p>
+        <p>Cidade: Salt Lake City</p>
+        <p>Local: Temple Square (Praça do Templo) em Salt Lake/p>
+
+
+    </div>
+
+    <div class="weather">
+        <h2>Weather</h2>
+        <img src="imagens/weather.svg" alt="Símbolo de clima ou tempo">
+        <p>Estações: 4 estações bem definidas</p>
+        <p>Primavera: Março a Maio (Temperatura entre 10°C e 23°C)</p>
+        <p>Verão: Junho a Agosto (Máx entre 30°C e 35°C)</p>
+        <p>Outono: Setembro a novembro (Temperatura entre 10°C e 25°C)</p>
+        <p>Inverno: Dezembro a Fevereiro (Temperatura entre -5°C e 5°C)</p>
+    </div>
+
+    <footer>
+        <p>&copy;<span id="anoatual"></span> - Jainilene Nascimento - Maranhão</p>
+        <p>Última modificação: <span id="ultima-mdificacao"></span> </p>
+    </footer>
+
+</body>
+
+</html>
