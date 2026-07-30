@@ -35,11 +35,11 @@
 
     .clima::after {
         display: inline-block;
-        content: "";
+        content: "🌤️";
         width: 25px;
         height: 25px;
         margin-left: 8px;
-        background: url("../imagens/weather.svg");
+        /* background: url("../imagens/weather.svg"); */
     }
 
     .icone-clima {
