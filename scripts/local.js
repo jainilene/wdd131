@@ -13,3 +13,11 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+const sensacao = calcularSensacaoTermica(temperatura, velocidade);
+
+if (temperatura <= 10 && velocidade > 4.8) {
+    windChill.textContent = sensacao;
+} else {
+    windChill.textContent = "N/A";
+}
