@@ -127,8 +127,10 @@ function toogleActive(element) {
     element.classList.add("active");
 }
 
-const cutoffDate = new Date('1950-01-01');
-const largeArea = 50000;
+const cutoffDateAntes = new Date('1900-01-01');
+const cutoffDateDepois = new Date('2000-01-01');
+const largeArea = 90000;
+const smallArea = 10000;
 
 function setFilter(seletor, filterFunction) {
     const element = document.querySelector(seletor);
@@ -140,10 +142,10 @@ function setFilter(seletor, filterFunction) {
 }
 
 setFilter('#all', () => templos);
-setFilter('#old', templo => new Date(templo.consagracao) < cutoffDate);
-setFilter('#new', templo => new Date(templo.consagracao) >= cutoffDate);
-setFilter('#large', templo => templo.area >= largeArea);
-setFilter('#small', templo => templo.area < largeArea);
+setFilter('#old', templo => new Date(templo.consagracao) < cutoffDateAntes);
+setFilter('#new', templo => new Date(templo.consagracao) > cutoffDateDepois);
+setFilter('#large', templo => templo.area > largeArea);
+setFilter('#small', templo => templo.area < smallArea);
 
 
 

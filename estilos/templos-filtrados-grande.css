@@ -23,8 +23,13 @@
     .container-templos {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 25px;
+        grid-gap: 15px;
         place-items: center;
+    }
+
+    .container-templos section {
+        height: 100%;
+        ;
     }
 
     header,
