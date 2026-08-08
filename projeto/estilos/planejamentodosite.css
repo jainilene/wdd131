@@ -1,0 +1,52 @@
+body {
+    background-color: lightpink;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+    font-family: "Google Sans", sans-serif;
+}
+
+img {
+    width: 10rem;
+    height: auto;
+
+}
+
+.nome-site {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    ;
+}
+
+p {
+    text-align: center;
+    font-family: "Delius", cursive;
+}
+
+.div-wireframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.img-wireframe {
+    height: 300px;
+    width: auto;
+
+}
+
+footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
