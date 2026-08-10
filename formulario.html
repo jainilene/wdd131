@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/formulario-pequeno.css">
+    <link rel="stylesheet" href="estilos/formulario-grande.css">
+    <script src="scripts/formulario.js" defer></script>
+    <meta name="author" content="Jainilene Nascimento">
+    <meta name="description" content="Formulário WDD131">
+</head>
+
+<body>
+
+    <header>
+        <h1>Avaliação do Produto</h1>
+    </header>
+
+    <main>
+
+        <form method="get" action="avaliacao.html">
+            <label>Nome do Produto
+                <select id="nome-produto" name="nome-produto">
+                    <option value="nome-produto" disabled selected>Selecione um produto</option>
+                </select>
+            </label>
+    
+            <label>Classificação Geral</label>
+            <label>
+                ☆
+                <input type="radio" name="classificação" id="" required>
+            </label>
+            <label>
+                ☆☆
+                <input type="radio" name="classificação" id="" required>
+            </label>
+            <label>
+                ☆☆☆
+                <input type="radio" name="classificação" id="" required>
+            </label>
+            <label>
+                ☆☆☆☆
+                <input type="radio" name="classificação" id="" required>
+            </label>
+            <label>
+                ☆☆☆☆☆
+                <input type="radio" name="classificação" id="" required>
+            </label>
+    
+            <label>Data de Instalação<input type="date" id="data-instalacao" name="data-instalacao" required></label>
+        
+            <label>Quais recursos você achou úteis no produto? (Marque todos que se aplicam) </label>
+                <label>
+                    <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
+                    Desempenho
+                </label>    
+                <label>
+                    <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
+                    Design
+                </label>    
+                <label>
+                    <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
+                    Durabilidade
+                </label>    
+                <label>
+                    <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
+                    Facilidade de Uso
+                </label>   
+    
+            <label>Avaliação Escrita<span>(Opcional)</span>
+                <textarea name="avaliacao-escrita" id="avaliacao-escrita"></textarea>
+            </label>
+        
+            <label>Seu Nome<span>(Opcional)</span>
+                <input type="text" name="nome-usuario" id="nome-usuario">
+            </label>
+        
+    
+            <input type="submit" value="Publicar Avaliação">
+    
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="anoatual"></span> - Jainilene Nascimento - Maranhão</p>
+        <p>Última modificação: <span id="ultima-mdificacao"></span> </p>
+    </footer>
+
+</body>
+
+</html>
