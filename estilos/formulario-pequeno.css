@@ -30,7 +30,9 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 
-
+.obrigatorio {
+    color: red;
+}
 
 .class-estrela {
     display: flex;

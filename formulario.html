@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/formulario-grande.css">
     <script src="scripts/formulario.js" defer></script>
     <meta name="author" content="Jainilene Nascimento">
-    <meta name="description" content="Formulário WDD131">
+    <meta name="description" content="Página para cliente realizar avaliação do produto adquirido">
 </head>
 
 <body>
@@ -21,62 +21,63 @@
     <main>
 
         <form method="get" action="avaliacao.html">
-            <label class="label-nome-produto">Nome do Produto
-                <select id="nome-produto" name="nome-produto">
+            <label class="label-nome-produto">Nome do Produto<spam class="obrigatorio">*</spam>
+                <select id="nome-produto" name="nome-produto" required>
                     <option value="nome-produto" disabled selected>Selecione um produto</option>
                 </select>
             </label>
 
-            <label>Classificação Geral</label>
+            <label>Classificação Geral<spam class="obrigatorio">*</spam></label>
             <div class="class-estrela">
                 <div class="estrela">
-                    <label>
-                        <input type="radio" name="classificação" id="classificação1" required>
+                    <input type="radio" name="classificação1" id="classificação1" value="1" required>
+                    <label for="classificação1">
                         ☆
                     </label>
                 </div>
                 <div class="estrela">
                     <label>
-                        <input type="radio" name="classificação" id="classificação2" required>
+                        <input type="radio" name="classificação2" id="classificação2" value="2" required>
                         ☆ ☆
                     </label>
                 </div>
                 <div class="estrela">
                     <label>
-                        <input type="radio" name="classificação" id="classificação3" required>
+                        <input type="radio" name="classificação3" id="classificação3" value="3" required>
                         ☆ ☆ ☆
                     </label>
                 </div>
                 <div class="estrela">
                     <label>
-                        <input type="radio" name="classificação" id="classificação4" required>
+                        <input type="radio" name="classificação4" id="classificação4" value="4" required>
                         ☆ ☆ ☆ ☆
                     </label>
                 </div>
                 <div class="estrela">
                     <label>
-                        <input type="radio" name="classificação" id="classificação5" required>
+                        <input type="radio" name="classificação5" id="classificação5" value="5" required>
                         ☆ ☆ ☆ ☆ ☆
                     </label>
                 </div>
             </div>
-            <label>Data de Instalação<input type="date" id="data-instalacao" name="data-instalacao" required></label>
+            <label>Data de Instalação <spam class="obrigatorio">*</spam><input type="date" id="data-instalacao"
+                    name="data-instalacao" required></label>
 
             <label>Quais recursos você achou úteis no produto? (Marque todos que se aplicam) </label>
             <label class="label-recursos">
-                <input type="checkbox" name="recursos-uteis" id="desempenho">
+                <input type="checkbox" name="desempenho" id="desempenho" value="desempenho">
                 Desempenho
             </label>
             <label class="label-recursos">
-                <input type="checkbox" name="recursos-uteis" id="design">
+                <input type="checkbox" name="design" id="design" value="design">
                 Design
             </label>
             <label class="label-recursos">
-                <input type="checkbox" name="recursos-uteis" id="durabilidade">
+                <input type="checkbox" name="durabilidade" id="durabilidade" value="durabilidade">
                 Durabilidade
             </label>
             <label class="label-recursos">
-                <input type="checkbox" name="recursos-uteis" id="facilidade">
+                <input type="checkbox" name="facilidade" id="facilidade" value="facilidade">
                 Facilidade de Uso
             </label>
 
