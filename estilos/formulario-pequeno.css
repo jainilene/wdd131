@@ -1,0 +1,91 @@
+* {
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+}
+
+header,
+main,
+footer {
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+label {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+input[type="checkbox"] {
+    display: inline;
+    box-sizing: border-box;
+}
+
+
+
+.class-estrela {
+    display: flex;
+    flex-direction: column;
+}
+
+.estrela {
+    margin: 0.4rem;
+}
+
+.estrela input,
+.estrela label {
+    display: inline;
+}
+
+/* .label-nome-produto, */
+textarea,
+select option,
+input[type="text"],
+input[type="date"],
+select {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    width: 100%;
+    margin-top: 0.2rem;
+    /* margin-right: 0.5rem; */
+}
+
+.label-recursos {
+    margin-top: 0.1rem;
+    padding-top: 0.1rem;
+}
+
+.botao-publicar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+input[type="submit"] {
+    padding: 0.75rem;
+
+}
+
+.opcional {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    background-color: blanchedalmond;
+    color: #000;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}

@@ -21,65 +21,77 @@
     <main>
 
         <form method="get" action="avaliacao.html">
-            <label>Nome do Produto
+            <label class="label-nome-produto">Nome do Produto
                 <select id="nome-produto" name="nome-produto">
                     <option value="nome-produto" disabled selected>Selecione um produto</option>
                 </select>
             </label>
-    
+
             <label>Classificação Geral</label>
-            <label>
-                ☆
-                <input type="radio" name="classificação" id="" required>
-            </label>
-            <label>
-                ☆☆
-                <input type="radio" name="classificação" id="" required>
-            </label>
-            <label>
-                ☆☆☆
-                <input type="radio" name="classificação" id="" required>
-            </label>
-            <label>
-                ☆☆☆☆
-                <input type="radio" name="classificação" id="" required>
-            </label>
-            <label>
-                ☆☆☆☆☆
-                <input type="radio" name="classificação" id="" required>
-            </label>
-    
+            <div class="class-estrela">
+                <div class="estrela">
+                    <label>
+                        <input type="radio" name="classificação" id="" required>
+                        ☆
+                    </label>
+                </div>
+                <div class="estrela">
+                    <label>
+                        <input type="radio" name="classificação" id="" required>
+                        ☆☆
+                    </label>
+                </div>
+                <div class="estrela">
+                    <label>
+                        <input type="radio" name="classificação" id="" required>
+                        ☆☆☆
+                    </label>
+                </div>
+                <div class="estrela">
+                    <label>
+                        <input type="radio" name="classificação" id="" required>
+                        ☆☆☆☆
+                    </label>
+                </div>
+                <div class="estrela">
+                    <label>
+                        <input type="radio" name="classificação" id="" required>
+                        ☆☆☆☆☆
+                    </label>
+                </div>
+            </div>
             <label>Data de Instalação<input type="date" id="data-instalacao" name="data-instalacao" required></label>
-        
+
             <label>Quais recursos você achou úteis no produto? (Marque todos que se aplicam) </label>
-                <label>
-                    <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
-                    Desempenho
-                </label>    
-                <label>
-                    <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
-                    Design
-                </label>    
-                <label>
-                    <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
-                    Durabilidade
-                </label>    
-                <label>
-                    <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
-                    Facilidade de Uso
-                </label>   
-    
-            <label>Avaliação Escrita<span>(Opcional)</span>
+            <label class="label-recursos">
+                <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
+                Desempenho
+            </label>
+            <label class="label-recursos">
+                <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
+                Design
+            </label>
+            <label class="label-recursos">
+                <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
+                Durabilidade
+            </label>
+            <label class="label-recursos">
+                <input type="checkbox" name="recursos-uteis" id="recursos-uteis">
+                Facilidade de Uso
+            </label>
+
+            <label>Avaliação Escrita<span class="opcional">(Opcional)</span>
                 <textarea name="avaliacao-escrita" id="avaliacao-escrita"></textarea>
             </label>
-        
-            <label>Seu Nome<span>(Opcional)</span>
+
+            <label>Seu Nome<span class="opcional">(Opcional)</span>
                 <input type="text" name="nome-usuario" id="nome-usuario">
             </label>
-        
-    
-            <input type="submit" value="Publicar Avaliação">
-    
+
+            <div class="botao-publicar">
+                <input type="submit" value="Publicar Avaliação">
+            </div>
+
         </form>
     </main>
 

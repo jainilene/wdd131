@@ -1,0 +1,21 @@
+header,
+main,
+footer {
+    display: block;
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: blanchedalmond;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
