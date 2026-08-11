@@ -21,13 +21,13 @@
     <main>
 
         <form method="get" action="avaliacao.html">
-            <label class="label-nome-produto">Nome do Produto
+            <label for="nome-produto" class="label-nome-produto">Nome do Produto <span class="obrigatorio">*</span>
                 <select id="nome-produto" name="nome-produto" required>
-                    <option value="nome-produto" disabled selected>Selecione um produto</option>
+                    <option value="" disabled selected>Selecione um produto</option>
                 </select>
             </label>
 
-            <label>Classificação Geral</label>
+            <label>Classificação Geral <span class="obrigatorio">*</span></label>
             <div class="class-estrela">
                 <div class="estrela">
                     <input type="radio" name="classificação" id="classificação1" value="1" required>
@@ -60,28 +60,28 @@
                     </label>
                 </div>
             </div>
-            <label>Data de Instalação <spam class="obrigatorio">*</spam><input type="date" id="data-instalacao"
-                    name="data-instalacao" required></label>
+            <label for="data-instalacao">Data de Instalação <span class="obrigatorio">*</span><input type="date"
+                    id="data-instalacao" name="data-instalacao" required></label>
 
             <label>Quais recursos você achou úteis no produto? (Marque todos que se aplicam) </label>
-            <label class="label-recursos">
+            <label for="desempenho" class="label-recursos">
                 <input type="checkbox" name="desempenho" id="desempenho" value="desempenho">
                 Desempenho
             </label>
-            <label class="label-recursos">
+            <label for="design" class="label-recursos">
                 <input type="checkbox" name="design" id="design" value="design">
                 Design
             </label>
-            <label class="label-recursos">
+            <label for="durabilidade" class="label-recursos">
                 <input type="checkbox" name="durabilidade" id="durabilidade" value="durabilidade">
                 Durabilidade
             </label>
-            <label class="label-recursos">
+            <label for="facilidade" class="label-recursos">
                 <input type="checkbox" name="facilidade" id="facilidade" value="facilidade">
                 Facilidade de Uso
             </label>
 
-            <label>Avaliação Escrita<span class="opcional">(Opcional)</span>
+            <label for="avaliacao-escrita">Avaliação Escrita<span class="opcional">(Opcional)</span>
                 <textarea name="avaliacao-escrita" id="avaliacao-escrita"></textarea>
             </label>
 
