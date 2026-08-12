@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Petit Formal Script", cursive;
+    font-family: "Delius", cursive;
     font-weight: 400;
 }
 
@@ -16,12 +16,15 @@ body {
 main {
     flex: 1;
     width: 100%;
-    font-family: "Lavishly Yours", cursive;
+    /* font-family: "Lavishly Yours", cursive; */
 }
 
 main h1,
 h2 {
     text-align: center;
+    background-color: #ffc1d5;
+    font-family: "Google Sans", sans-serif;
+    ;
 }
 
 p {
