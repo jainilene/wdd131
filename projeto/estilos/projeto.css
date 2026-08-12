@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F2F0EA;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    font-family: "Lavishly Yours", cursive;
+}
+
+main h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: larger;
+}
+
+#menu {
+    font-size: 1rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.open a {
+    display: block;
+}
+
+header {
+    background-color: #FF78AC;
+    display: grid;
+    grid-gap: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #333;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #FF78AC;
+    color: #000;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    text-align: center;
+}
