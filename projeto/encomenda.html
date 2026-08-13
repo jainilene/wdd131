@@ -31,6 +31,84 @@
     </header>
 
     <main>
+        <form id="form-encomenda" action="encomenda-realizada.html">
+
+            <h2>Faça sua encomenda</h2>
+
+            <fieldset>
+                <legend>Dados do cliente</legend>
+
+                <label for="nome">Nome:<span class="obrigatorio">*</span></label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone:<span class="obrigatorio">*</span></label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha seu doce</legend>
+
+                <label for="produto">Produto:<span class="obrigatorio">*</span></label>
+
+                <select id="produto" name="produto" required>
+                    <option value="">Selecione um produto</option>
+                </select>
+
+                <p id="descricao-produto"></p>
+
+                <label for="quantidade">Quantidade:<span class="obrigatorio">*</span></label>
+
+                <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+
+                <div class="div-botao-acrescentar" id="add_doce">
+                    <button type="button">
+                        Acrescentar doce
+                    </button>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de pagamento<span class="obrigatorio">*</span></legend>
+
+                <label>
+                    <input type="radio" name="pagamento" value="Pix" required>
+                    Pix
+                </label>
+
+                <label>
+                    <input type="radio" name="pagamento" value="Cartão">
+                    Cartão
+                </label>
+
+                <label>
+                    <input type="radio" name="pagamento" value="Dinheiro">
+                    Dinheiro
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Observações</legend>
+
+                <textarea id="observacoes" name="observacoes" rows="4"
+                    placeholder="Ex.: escrever nome no bolo..."></textarea>
+            </fieldset>
+
+            <fieldset id="resultado">
+                <h2>Resumo da encomenda</h2>
+                <ul id="list"></ul>
+
+                <div id="resumo"></div>
+            </fieldset>
+
+            <div class="div-botao-enviar">
+                <button type="submit">
+                    Finalizar encomenda
+                </button>
+            </div>
+        </form>
+
+
 
     </main>
 

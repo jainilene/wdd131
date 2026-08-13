@@ -16,16 +16,18 @@ body {
 main {
     flex: 1;
     width: 100%;
-    /* font-family: "Lavishly Yours", cursive; */
 }
+
+/* font-family: "Lavishly Yours", cursive; */
 
 main h1,
 h2 {
     text-align: center;
     background-color: #ffc1d5;
     font-family: "Google Sans", sans-serif;
-    ;
+    border-radius: 10px;
 }
+
 
 p {
     font-size: larger;
@@ -96,6 +98,113 @@ nav a:hover {
     color: #000;
 }
 
+fieldset {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-left: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+
+label,
+input[type="text"] {
+    display: block;
+}
+
+label {
+    margin-top: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+}
+
+input,
+select,
+button {
+    padding: 0.75rem;
+}
+
+.div-botao-enviar,
+.div-botao-acrescentar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+}
+
+.div-botao-acrescentar {
+    margin-top: 0.4rem;
+}
+
+button {
+    background-color: aliceblue;
+}
+
+
+/*Pagina de Precos*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+thead th {
+    text-align: left;
+    background: #232220;
+    color: #f6f5f2;
+    padding: 14px 18px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+}
+
+thead th:last-child,
+tbody td:last-child {
+    text-align: right;
+}
+
+tbody td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #ececea;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #faf9f6;
+}
+
+.produto-nome {
+    font-weight: 600;
+}
+
+.produto-desc {
+    display: block;
+    font-weight: 400;
+    color: #9a9689;
+    font-size: 0.82rem;
+    margin-top: 2px;
+}
+
+
+/* Fim da Página de Preços*/
+
+
+
 
 footer {
     text-align: center;
@@ -107,4 +216,13 @@ footer {
 
 figcaption {
     text-align: center;
+}
+
+.obrigatorio {
+    color: red;
+}
+
+.p-encomenda-realizada {
+    text-align: center;
+    padding: 0.75rem;
 }
