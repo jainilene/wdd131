@@ -18,6 +18,12 @@ main {
     width: 100%;
 }
 
+.nome-site {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 /* font-family: "Lavishly Yours", cursive; */
 
 main h1,
