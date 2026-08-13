@@ -146,23 +146,26 @@ if (tbody) {
 }
 
 // Função de adicionar doce
-botao_adicionar_doce.addEventListener('click', function () {
-    const idProduto = selectProduto.value;
-    if (idProduto != null) {
-        const li = document.createElement('li');
-        const botaoexcluir = document.createElement('button');
 
-        const qtd = Number(quantidade.value);
+if (botao_adicionar_doce) {
+    botao_adicionar_doce.addEventListener('click', function () {
+        const idProduto = selectProduto.value;
+        if (idProduto != null) {
+            const li = document.createElement('li');
+            const botaoexcluir = document.createElement('button');
 
-        li.textContent = ` ${qtd}x ${produtos[idProduto].nome} -
-            R$ ${(produtos[idProduto].preco * qtd).toFixed(2)} `;
-        botaoexcluir.textContent = '❌';
+            const qtd = Number(quantidade.value);
 
-        li.append(botaoexcluir);
-        lista.append(li);
-        botaoexcluir.addEventListener('click', function () {
-            lista.removeChild(li);
-            // input.focus();
-        });
-    }
-});
+            li.textContent = ` ${qtd}x ${produtos[idProduto].nome} -
+                R$ ${(produtos[idProduto].preco * qtd).toFixed(2)} `;
+            botaoexcluir.textContent = '❌';
+
+            li.append(botaoexcluir);
+            lista.append(li);
+            botaoexcluir.addEventListener('click', function () {
+                lista.removeChild(li);
+                // input.focus();
+            });
+        }
+    });
+}
